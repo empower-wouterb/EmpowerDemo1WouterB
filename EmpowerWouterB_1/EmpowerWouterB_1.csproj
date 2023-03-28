@@ -41,10 +41,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <ProjectReference Include="..\AutomationScript_ClassLibrary\AutomationScript_ClassLibrary.csproj">
-      <Project>{8B1F8AC2-95FF-4ABD-9E63-470A824E464E}</Project>
-      <Name>AutomationScript_ClassLibrary</Name>
-    </ProjectReference>
     <AdditionalFiles Include="stylecop.json" />
     <Content Include=".editorconfig" />
   </ItemGroup>
@@ -53,6 +49,9 @@
     <Compile Include="EmpowerWouterB_1.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Skyline.DataMiner.Core.DataMinerSystem.Automation">
+      <Version>1.1.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Dev.Automation">
       <Version>10.1.0.6</Version>
     </PackageReference>
